@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tableau de Points (+1 / -1 avec sauvegarde)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      width: 60%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    button {
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    .plus {
+      background-color: #28a745;
+    }
+    .plus:hover {
+      background-color: #218838;
+    }
+    .moins {
+      background-color: #dc3545;
+    }
+    .moins:hover {
+      background-color: #c82333;
+    }
+    #reset {
+      background-color: #6c757d;
+      margin-top: 20px;
+    }
+    #reset:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏆 Tableau de Points </h1>
+  <h2>lin narso haha</h2>
+
+  <table id="pointsTable">
+    <tr>
+      <th>Nom</th>
+      <th>Points</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>mouhamed haouari</td>
+      <td id="points1">0</td>
+      <td>
+        <button class="plus" onclick="modifierPoints('points1', 1)">+1</button>
+        <button class="moins" onclick="modifierPoints('points1', -1)">-1</button>
+      </td>
+    </tr>
+    <tr>
+      <td>emna haouari</td>
+      <td id="points2">0</td>
+      <td>
+        <button class="plus" onclick="modifierPoints('points2', 1)">+1</button>
+        <button class="moins" onclick="modifierPoints('points2', -1)">-1</button>
+      </td>
+    </tr>
+    
+    </tr>
+  </table>
+
+  <button id="reset" onclick="resetPoints()">🔁 Réinitialiser</button>
+
+  <script>
+    // Charger les points sauvegardés
+    window.onload = function() {
+      for (let i = 1; i <= 3; i++) {
+        let saved = localStorage.getItem("points" + i);
+        if (saved !== null) {
+          document.getElementById("points" + i).textContent = saved;
+        }
+      }
+    }
+
+    // Fonction pour modifier (augmenter ou diminuer) les points
+    function modifierPoints(id, valeur) {
+      let cellule = document.getElementById(id);
+      let points = parseInt(cellule.textContent);
+      points += valeur;
+      cellule.textContent = points;
+      localStorage.setItem(id, points); // sauvegarde
+    }
+
+    // Réinitialiser tous les points
+    function resetPoints() {
+      for (let i = 1; i <= 3; i++) {
+        localStorage.removeItem("points" + i);
+        document.getElementById("points" + i).textContent = 0;
+      }
+    }
+  </script>
+</body>
