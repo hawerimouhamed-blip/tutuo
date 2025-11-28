@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouhamed & Emna - Notre Histoire d'Amour</title>
+    <link rel="stylesheet" href="HEHE.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">❤️ Mouhamed & Emna</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="#story" class="nav-link">Notre Histoire</a></li>
+                <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li class="nav-item"><a href="#messages" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#guestbook" class="nav-link">Livre d'Or</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-title">
+                <h1 class="title-main">Mouhamed <span class="heart">❤️</span> Emna</h1>
+                <p class="subtitle">Une histoire d'amour éternelle</p>
+            </div>
+            <div class="floating-hearts"></div>
+            <button class="cta-btn" onclick="document.querySelector('#story').scrollIntoView({behavior: 'smooth'})">
+                Notre Histoire
+            </button>
+        </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section id="story" class="story-section">
+        <h2 class="section-title">💑 Notre Histoire</h2>
+        <div class="story-cards">
+            <div class="story-card fade-in">
+                <div class="card-icon">💫</div>
+                <h3>Le Début</h3>
+                <p>Mouhamed et Emna - Une histoire d'amour qui a commencé par un regard magique. Le destin les avait guidés l'un vers l'autre, et ce moment a changé tout.</p>
+            </div>
+            <div class="story-card fade-in">
+                <div class="card-icon">💕</div>
+                <h3>L'Amour</h3>
+                <p>Chaque moment ensemble est une bénédiction. Chaque rire est une mélodie douce, chaque geste est une preuve d'amour infini qui grandit chaque jour.</p>
+            </div>
+            <div class="story-card fade-in">
+                <div class="card-icon">🚀</div>
+                <h3>L'Avenir</h3>
+                <p>Ensemble, ils construisent un futur rempli de rêves, de voyages et d'aventures. Leur amour est le fondement de tout ce qu'ils entreprennent.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOVE COUNTER SECTION -->
+    <section class="counter-section">
+        <h2 class="section-title">💗 Nos Jours</h2>
+        <div class="counter-container">
+            <div class="counter-box">
+                <div class="counter-number" id="days">0</div>
+                <p>Jours Ensemble</p>
+            </div>
+            <div class="counter-box">
+                <div class="counter-number" id="hours">0</div>
+                <p>Heures d'Amour</p>
+            </div>
+            <div class="counter-box">
+                <div class="counter-number" id="minutes">0</div>
+                <p>Minutes de Bonheur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section id="timeline" class="timeline-section">
+        <h2 class="section-title">📅 Notre Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">💫</div>
+                <div class="timeline-content">
+                    <h3>Quand Nous Nous Sommes Rencontrés</h3>
+                    <p class="timeline-date">28 SEPTEMBRE 2023</p>
+                    <p>Le jour où nos regards se sont croisés et tout a changé magiquement...</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">💋</div>
+                <div class="timeline-content">
+                    <h3>Notre Premier Baiser</h3>
+                    <p class="timeline-date">20 Août 2023</p>
+                    <p>Ce baiser magique sous les étoiles que nous n'oublierons jamais...</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">💕</div>
+                <div class="timeline-content">
+                    <h3>Je T'Aime</h3>
+                    <p class="timeline-date">10 Janvier 2023</p>
+                    <p>Les trois mots qui ont changé notre vie à jamais...</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">✈️</div>
+                <div class="timeline-content">
+                    <h3>Première Aventure Ensemble</h3>
+                    <p class="timeline-date">22 JUILLET  2024</p>
+                    <p>Notre premier voyage ensemble, rempli de merveilles et de souvenirs...</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">💍</div>
+                <div class="timeline-content">
+                    <h3>Sa Demande en Mariage</h3>
+                    <p class="timeline-date">1 SEPTEMBRE 2025</p>
+                    <p>Il s'est agenouillé et a dit 'Veux-tu m'épouser?' - Et j'ai dit OUI!</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">👰‍♀️</div>
+                <div class="timeline-content">
+                    <h3>Notre Grand Jour</h3>
+                    <p class="timeline-date"> JUIN 2026</p>
+                    <p>Et ils se marièrent pour construire un amour éternel...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">📸 Galerie de Moments</h2>
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="G:\2025_09_01_01_08_IMG_2664.JPG" alt="Premier Selfie">
+                <div class="gallery-overlay">
+                    <p>Notre meilleure Photo</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="G:\2025_07_19_15_39_IMG_0540.JPG" alt="Plage">
+                <div class="gallery-overlay">
+                    <p>Jour à la Plage</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="G:\2025_07_20_03_02_IMG_0594.JPG" alt="Coucher">
+                <div class="gallery-overlay">
+                    <p>Coucher </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="G:\2025_09_16_21_46_IMG_2989.JPG" alt="Voyage">
+                <div class="gallery-overlay">
+                    <p>Notre bac 😥</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="G:\2025_09_28_13_56_IMG_3383.JPG"alt="Dinner">
+                <div class="gallery-overlay">
+                    <p>Dîner Spécial</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="G:\2025_10_08_17_55_IMG_3779.JPG" alt="Sourire">
+                <div class="gallery-overlay">
+                    <p>Notre Sourire</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL GALLERY -->
+    <div id="modal" class="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <img id="modal-img" src="" alt="">
+        <p id="modal-caption"></p>
+    </div>
+
+    <!-- MESSAGES SECTION -->
+    <section id="messages" class="messages-section">
+        <h2 class="section-title">💌 Messages d'Amour</h2>
+        <div class="message-form">
+            <input type="text" id="message-author" placeholder="De qui?" class="message-input">
+            <textarea id="message-text" placeholder="Écris un message d'amour..." class="message-textarea"></textarea>
+            <button onclick="addMessage()" class="message-btn">Envoyer 💕</button>
+        </div>
+        <div id="messages-container" class="messages-container">
+            <!-- Messages will appear here -->
+        </div>
+    </section>
+
+    <!-- GUESTBOOK SECTION -->
+    <section id="guestbook" class="guestbook-section">
+        <h2 class="section-title">📖 Livre d'Or</h2>
+        <div class="guestbook-form">
+            <input type="text" id="guest-name" placeholder="Ton nom" class="guest-input">
+            <textarea id="guest-message" placeholder="Tes vœux pour nous..." class="guest-textarea"></textarea>
+            <button onclick="addGuestMessage()" class="guest-btn">Signer le Livre 🖊️</button>
+        </div>
+        <div id="guestbook-container" class="guestbook-container">
+            <!-- Guest messages will appear here -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>💕 Pour toujours ensemble, Mouhamed & Emna 💕</p>
+        <p class="footer-date">Notre Histoire Commence Ici</p>
+    </footer>
+
+    <script src="hehe.js"></script>
+</body>
+</html>
