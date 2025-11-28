@@ -2168,8 +2168,14 @@ function addMessage() {
     // Affiche le nouveau message
     displayMessages();
 }
+// Au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    displayMessages();  // ✅ Affiche les messages sauvegardés
+    displayGuestMessages();  // ✅ Affiche le livre d'or
+});
 
 }</script>
 </body>
 
 </html>
+
