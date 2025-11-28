@@ -2149,6 +2149,27 @@ function createClickHeart(x, y) {
     document.body.appendChild(heart);
 
     setTimeout(() => heart.remove(), 2000);
+    // Quand tu envoies un message
+function addMessage() {
+    const author = document.getElementById('message-author').value;
+    const text = document.getElementById('message-text').value;
+
+    const message = {
+        author: author,
+        text: text,
+        date: new Date().toLocaleDateString('fr-FR')
+    };
+
+    // ✅ SAUVEGARDE DANS LE NAVIGATEUR
+    let messages = JSON.parse(localStorage.getItem('messages') || '[]');
+    messages.push(message);
+    localStorage.setItem('messages', JSON.stringify(messages));
+    
+    // Affiche le nouveau message
+    displayMessages();
+}
+
 }</script>
 </body>
+
 </html>
